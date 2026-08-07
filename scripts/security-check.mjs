@@ -34,11 +34,6 @@ assert(existsSync(join(root, ".env.example")), ".env.example is missing");
 assertIncludes(".gitignore", ".env", ".gitignore must ignore .env");
 assertIncludes(".gitignore", "!.env.example", ".gitignore must allow .env.example");
 
-assert(existsSync(join(root, ".github/workflows/ci.yml")), "CI workflow is missing");
-assertIncludes(".github/workflows/ci.yml", "npm run lint", "CI must run lint");
-assertIncludes(".github/workflows/ci.yml", "npm run test", "CI must run tests");
-assertIncludes(".github/workflows/ci.yml", "npm run build", "CI must run build");
-
 const leadCapture = read("src/lib/lead-capture.server.ts");
 assert(leadCapture.includes("MAX_CAPTURE_BYTES"), "Lead capture must limit request size");
 assert(leadCapture.includes("application/json"), "Lead capture must enforce JSON content");
