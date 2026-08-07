@@ -79,27 +79,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "TallyPrime Ghana Partner | Demo, Setup & CRM" },
+      { title: "TallyPrime in Ghana — Authorized Partner | Free Demo & Setup" },
       {
         name: "description",
         content:
-          "Authorized TallyPrime partner in Ghana for free demos, licensing, setup, training, support, and CRM-tracked sales follow-up.",
+          "Run your entire business on TallyPrime — accounting, invoicing, inventory, VAT compliance and payroll. Authorized partner in Ghana with free demo, local setup, training and support.",
       },
       { name: "author", content: "TallyPrime Partner Ghana" },
-      { property: "og:title", content: "TallyPrime Ghana Partner" },
+      { property: "og:title", content: "TallyPrime in Ghana — Authorized Partner | Free Demo & Setup" },
       {
         property: "og:description",
         content:
-          "Book a free TallyPrime demo with local setup, training, support, and CRM-tracked follow-up in Ghana.",
+          "Run your entire business on TallyPrime — accounting, invoicing, inventory, VAT compliance and payroll. Authorized partner in Ghana with free demo, local setup, training and support.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "TallyPrime Ghana Partner" },
+      { name: "twitter:title", content: "TallyPrime in Ghana — Authorized Partner | Free Demo & Setup" },
       {
         name: "twitter:description",
         content:
-          "Free TallyPrime demos, licensing, setup, training, support, and CRM-tracked follow-up in Ghana.",
+          "Run your entire business on TallyPrime — accounting, invoicing, inventory, VAT compliance and payroll. Authorized partner in Ghana with free demo, local setup, training and support.",
       },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/da969d49b7e5d51ea30779af4c3f0c5a/id-preview-13c01821--67f3e9a2-af87-4075-8cf0-8d5cc25f945b.lovable.app-1786113419169.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/da969d49b7e5d51ea30779af4c3f0c5a/id-preview-13c01821--67f3e9a2-af87-4075-8cf0-8d5cc25f945b.lovable.app-1786113419169.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

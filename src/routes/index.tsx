@@ -56,11 +56,11 @@ export const Route = createFileRoute("/")({
         content:
           "Run your entire business on TallyPrime — accounting, invoicing, inventory, VAT compliance and payroll. Authorized partner in Ghana with free demo, local setup, training and support.",
       },
-      { property: "og:title", content: "TallyPrime in Ghana — Authorized Partner" },
+      { property: "og:title", content: "TallyPrime in Ghana — Authorized Partner | Free Demo & Setup" },
       {
         property: "og:description",
         content:
-          "Accounting, invoicing, inventory, VAT and payroll in one platform. Free demo, on-site setup, local support in Ghana.",
+          "Run your entire business on TallyPrime — accounting, invoicing, inventory, VAT compliance and payroll. Authorized partner in Ghana with free demo, local setup, training and support.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
