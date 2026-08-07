@@ -86,7 +86,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Run your entire business on TallyPrime — accounting, invoicing, inventory, VAT compliance and payroll. Authorized partner in Ghana with free demo, local setup, training and support.",
       },
       { name: "author", content: "TallyPrime Partner Ghana" },
-      { property: "og:title", content: "TallyPrime in Ghana — Authorized Partner | Free Demo & Setup" },
+      {
+        property: "og:title",
+        content: "TallyPrime in Ghana — Authorized Partner | Free Demo & Setup",
+      },
       {
         property: "og:description",
         content:
@@ -94,14 +97,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "TallyPrime in Ghana — Authorized Partner | Free Demo & Setup" },
+      {
+        name: "twitter:title",
+        content: "TallyPrime in Ghana — Authorized Partner | Free Demo & Setup",
+      },
       {
         name: "twitter:description",
         content:
           "Run your entire business on TallyPrime — accounting, invoicing, inventory, VAT compliance and payroll. Authorized partner in Ghana with free demo, local setup, training and support.",
       },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/da969d49b7e5d51ea30779af4c3f0c5a/id-preview-13c01821--67f3e9a2-af87-4075-8cf0-8d5cc25f945b.lovable.app-1786113419169.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/da969d49b7e5d51ea30779af4c3f0c5a/id-preview-13c01821--67f3e9a2-af87-4075-8cf0-8d5cc25f945b.lovable.app-1786113419169.png" },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/da969d49b7e5d51ea30779af4c3f0c5a/id-preview-13c01821--67f3e9a2-af87-4075-8cf0-8d5cc25f945b.lovable.app-1786113419169.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/da969d49b7e5d51ea30779af4c3f0c5a/id-preview-13c01821--67f3e9a2-af87-4075-8cf0-8d5cc25f945b.lovable.app-1786113419169.png",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -126,7 +140,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    // The inline theme bootstrap intentionally updates the root class and
+    // color-scheme before React hydrates to avoid a flash of the wrong theme.
+    // Limit the hydration exemption to those root attributes.
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
