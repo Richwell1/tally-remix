@@ -34,6 +34,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         }
         return;
       }
+      // Make sure a profile + role row exists for this user (first user becomes admin)
+      const bootstrap = await supabase.rpc("ensure_user_bootstrap");
+      if (bootstrap.error) {
+        console.warn("[Auth] bootstrap failed", bootstrap.error.message);
+      }
       // Fetch profile + role in parallel
       const [profileRes, roleRes] = await Promise.all([
         supabase.from("profiles").select("full_name,avatar_url").eq("id", userId).maybeSingle(),
@@ -45,6 +50,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           .limit(1)
           .maybeSingle(),
       ]);
+
       if (!mounted) return;
       const role = (roleRes.data?.role as Role | undefined) ?? "rep";
       setUser({

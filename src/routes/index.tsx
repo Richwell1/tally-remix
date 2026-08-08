@@ -41,11 +41,9 @@ import {
   HandHeart,
   Loader2,
   AlertCircle,
-  Facebook,
-  Linkedin,
-  Instagram,
-  Twitter,
 } from "lucide-react";
+import { Facebook, Linkedin, Instagram, Twitter } from "@/components/common/BrandIcons";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({

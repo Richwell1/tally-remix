@@ -92,17 +92,37 @@ ${colorConfig
 
 const ChartTooltip = RechartsPrimitive.Tooltip;
 
-const ChartTooltipContent = React.forwardRef<
-  HTMLDivElement,
-  React.ComponentProps<typeof RechartsPrimitive.Tooltip> &
-    React.ComponentProps<"div"> & {
-      hideLabel?: boolean;
-      hideIndicator?: boolean;
-      indicator?: "line" | "dot" | "dashed";
-      nameKey?: string;
-      labelKey?: string;
-    }
->(
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// Recharts v3 no longer surfaces `payload`/`label` on the public Tooltip/Legend
+// prop types even though it still injects them at runtime. These local shapes
+// restore the injected members without changing behaviour.
+type ChartPayloadItem = {
+  type?: string;
+  name?: any;
+  value?: any;
+  dataKey?: any;
+  color?: string;
+  fill?: string;
+  payload?: any;
+};
+
+type ChartTooltipContentProps = Omit<React.ComponentProps<"div">, "color" | "formatter"> & {
+  active?: boolean;
+  payload?: ChartPayloadItem[];
+  label?: any;
+  labelFormatter?: (value: any, payload: any) => React.ReactNode;
+  labelClassName?: string;
+  formatter?: (value: any, name: any, item: any, index: number, payload: any) => React.ReactNode;
+  color?: string;
+  hideLabel?: boolean;
+  hideIndicator?: boolean;
+  indicator?: "line" | "dot" | "dashed";
+  nameKey?: string;
+  labelKey?: string;
+};
+
+const ChartTooltipContent = React.forwardRef<HTMLDivElement, ChartTooltipContentProps>(
+
   (
     {
       active,
@@ -242,11 +262,13 @@ const ChartLegend = RechartsPrimitive.Legend;
 
 const ChartLegendContent = React.forwardRef<
   HTMLDivElement,
-  React.ComponentProps<"div"> &
-    Pick<RechartsPrimitive.LegendProps, "payload" | "verticalAlign"> & {
+  React.ComponentProps<"div"> & {
+      payload?: ChartPayloadItem[];
+      verticalAlign?: "top" | "middle" | "bottom";
       hideIcon?: boolean;
       nameKey?: string;
     }
+
 >(({ className, hideIcon = false, payload, verticalAlign = "bottom", nameKey }, ref) => {
   const { config } = useChart();
 
