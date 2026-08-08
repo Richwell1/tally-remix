@@ -12,7 +12,11 @@ import { resolvePreset } from "./scripts/deploy-target.mjs";
 // See scripts/deploy-target.mjs and docs/DEPLOYMENT_TARGETS.md.
 // `null` means "leave the platform default alone" — that is what Lovable's
 // sandbox needs, since it forces its own preset and output directory.
-const preset = resolvePreset();
+// Lovable publishes from `main`, so branch-based inference would incorrectly
+// force its production build to use the Cloudflare preset. External deploy
+// scripts already set DEPLOY_TARGET explicitly; only honor a preset then and
+// otherwise leave Lovable's platform-managed Nitro configuration untouched.
+const preset = process.env.DEPLOY_TARGET ? resolvePreset() : null;
 
 export default defineConfig({
   plugins: [mcpPlugin()],
