@@ -92,16 +92,33 @@ ${colorConfig
 
 const ChartTooltip = RechartsPrimitive.Tooltip;
 
+// Recharts v3 no longer surfaces `payload`/`label` on the public Tooltip/Legend
+// prop types even though they are still injected at runtime. These local shapes
+// restore the injected members without changing behaviour.
+type ChartPayloadItem = {
+  type?: string;
+  name?: string | number;
+  value?: unknown;
+  dataKey?: string | number;
+  color?: string;
+  fill?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  payload?: any;
+};
+
 const ChartTooltipContent = React.forwardRef<
   HTMLDivElement,
-  React.ComponentProps<typeof RechartsPrimitive.Tooltip> &
-    React.ComponentProps<"div"> & {
+  Omit<React.ComponentProps<typeof RechartsPrimitive.Tooltip>, "payload" | "label" | "ref"> &
+    Omit<React.ComponentProps<"div">, "color"> & {
+      payload?: ChartPayloadItem[];
+      label?: unknown;
       hideLabel?: boolean;
       hideIndicator?: boolean;
       indicator?: "line" | "dot" | "dashed";
       nameKey?: string;
       labelKey?: string;
     }
+
 >(
   (
     {
