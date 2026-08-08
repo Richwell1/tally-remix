@@ -39,7 +39,7 @@
         "@tanstack/react-query": "^5.101.4",
         "@tanstack/react-router": "1.170.18",
         "@tanstack/react-start": "1.168.34",
-        "@tanstack/router-plugin": "1.168.25",
+        "@tanstack/router-plugin": "1.168.23",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "cmdk": "^1.1.1",
@@ -643,9 +643,9 @@
 
     "@tanstack/router-core": ["@tanstack/router-core@1.171.15", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@tanstack/router-core/-/router-core-1.171.15.tgz", { "dependencies": { "@tanstack/history": "1.162.0", "cookie-es": "^3.0.0", "seroval": "^1.5.4", "seroval-plugins": "^1.5.4" } }, "sha512-IILCDcLaItMZQ2jEmCABHY1Nhjjn5XUvwpQp3e4Nmu+vfg0BgYFuu/QASz2SwE2ZNbVMrvt8X/wxa+Gg5aErxA=="],
 
-    "@tanstack/router-generator": ["@tanstack/router-generator@1.167.23", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@tanstack/router-generator/-/router-generator-1.167.23.tgz", { "dependencies": { "@babel/types": "^7.28.5", "@tanstack/router-core": "1.171.17", "@tanstack/router-utils": "1.162.2", "@tanstack/virtual-file-routes": "1.162.0", "jiti": "^2.7.0", "magic-string": "^0.30.21", "prettier": "^3.5.0", "zod": "^4.4.3" } }, "sha512-VXCGdsFMBJ1eRVpdDGXmuYUB7+AsqG0YcdATKCareTXrIbsBo/ox8Df5KsssoWV1jYVYlPUSpihpaiJXzJ1Kfw=="],
+    "@tanstack/router-generator": ["@tanstack/router-generator@1.167.21", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@tanstack/router-generator/-/router-generator-1.167.21.tgz", { "dependencies": { "@babel/types": "^7.28.5", "@tanstack/router-core": "1.171.15", "@tanstack/router-utils": "1.162.2", "@tanstack/virtual-file-routes": "1.162.0", "jiti": "^2.7.0", "magic-string": "^0.30.21", "prettier": "^3.5.0", "zod": "^4.4.3" } }, "sha512-m3oXZyienj8owialdyoZ0txHQrnEx/Ra+D9kWtar5fC2cWZr5Pvxl86VY2mX5RRLC5QLKLeRGT1x4HV95wHVDQ=="],
 
-    "@tanstack/router-plugin": ["@tanstack/router-plugin@1.168.25", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@tanstack/router-plugin/-/router-plugin-1.168.25.tgz", { "dependencies": { "@babel/core": "^7.28.5", "@babel/template": "^7.27.2", "@babel/types": "^7.28.5", "@tanstack/router-core": "1.171.17", "@tanstack/router-generator": "1.167.23", "@tanstack/router-utils": "1.162.2", "chokidar": "^5.0.0", "unplugin": "^3.0.0", "zod": "^4.4.3" }, "peerDependencies": { "@rsbuild/core": ">=1.0.2 || ^2.0.0", "@tanstack/react-router": "^1.170.20", "vite": ">=5.0.0 || >=6.0.0 || >=7.0.0 || >=8.0.0", "vite-plugin-solid": "^2.11.10 || ^3.0.0-0", "webpack": ">=5.92.0" }, "optionalPeers": ["@rsbuild/core", "@tanstack/react-router", "vite", "vite-plugin-solid", "webpack"] }, "sha512-Kj/mhjJlUa9wWyXacWd6DQ/axWrQGmxhOnRKlgHK6/A/eGeCU5Vwetbvi4S6FlMOjIJm514XPXYkEXqjXp7+4w=="],
+    "@tanstack/router-plugin": ["@tanstack/router-plugin@1.168.23", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@tanstack/router-plugin/-/router-plugin-1.168.23.tgz", { "dependencies": { "@babel/core": "^7.28.5", "@babel/template": "^7.27.2", "@babel/types": "^7.28.5", "@tanstack/router-core": "1.171.15", "@tanstack/router-generator": "1.167.21", "@tanstack/router-utils": "1.162.2", "chokidar": "^5.0.0", "unplugin": "^3.0.0", "zod": "^4.4.3" }, "peerDependencies": { "@rsbuild/core": ">=1.0.2 || ^2.0.0", "@tanstack/react-router": "^1.170.18", "vite": ">=5.0.0 || >=6.0.0 || >=7.0.0 || >=8.0.0", "vite-plugin-solid": "^2.11.10 || ^3.0.0-0", "webpack": ">=5.92.0" }, "optionalPeers": ["@rsbuild/core", "@tanstack/react-router", "vite", "vite-plugin-solid", "webpack"] }, "sha512-0+PIcvnaAimFwjoEIeV3h7LKjzC8zNnp7pH2UamdKwQ9QlY99WU9V0Xl0zbM0i9hrUa/mKgWPDAzELmPUu5fMA=="],
 
     "@tanstack/router-utils": ["@tanstack/router-utils@1.162.2", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@tanstack/router-utils/-/router-utils-1.162.2.tgz", { "dependencies": { "@babel/generator": "^7.28.5", "@babel/parser": "^7.28.5", "@babel/types": "^7.28.5", "ansis": "^4.1.0", "babel-dead-code-elimination": "^1.0.12", "diff": "^8.0.2", "pathe": "^2.0.3", "tinyglobby": "^0.2.15" } }, "sha512-hTWqJtqIFFdvuCl8WXNyrodp2L9zo2G37xKRrcVmVRWpAB2h+U1LuRAfS4tsFTiWOIoE/B+WDVFB8JpoEdw6jQ=="],
 
@@ -1455,21 +1455,13 @@
 
     "@tanstack/devtools-event-bus/ws": ["ws@8.20.1", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/ws/-/ws-8.20.1.tgz", { "peerDependencies": { "bufferutil": "^4.0.1", "utf-8-validate": ">=5.0.2" }, "optionalPeers": ["bufferutil", "utf-8-validate"] }, "sha512-It4dO0K5v//JtTXuPkfEOaI3uUN87iYPnqo/ZzqCoG3g8uhA66QUMs/SrM0YK7/NAu+r4LMh/9dq2A7k+rHs+w=="],
 
-    "@tanstack/router-generator/@tanstack/router-core": ["@tanstack/router-core@1.171.17", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@tanstack/router-core/-/router-core-1.171.17.tgz", { "dependencies": { "@tanstack/history": "1.162.0", "cookie-es": "^3.0.0", "seroval": "^1.6.2", "seroval-plugins": "^1.6.2" } }, "sha512-jaW4vGn+S0Txcz4HgARz9VN2BlgcyGJwIrZ2Vzo9FoJje8wzIiRSX+BMts6KGANXB/jWr+vLXJ3fen50ge2ZcA=="],
-
     "@tanstack/router-generator/jiti": ["jiti@2.7.0", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/jiti/-/jiti-2.7.0.tgz", { "bin": { "jiti": "lib/jiti-cli.mjs" } }, "sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ=="],
 
     "@tanstack/router-generator/prettier": ["prettier@3.8.3", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw=="],
 
-    "@tanstack/router-plugin/@tanstack/router-core": ["@tanstack/router-core@1.171.17", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@tanstack/router-core/-/router-core-1.171.17.tgz", { "dependencies": { "@tanstack/history": "1.162.0", "cookie-es": "^3.0.0", "seroval": "^1.6.2", "seroval-plugins": "^1.6.2" } }, "sha512-jaW4vGn+S0Txcz4HgARz9VN2BlgcyGJwIrZ2Vzo9FoJje8wzIiRSX+BMts6KGANXB/jWr+vLXJ3fen50ge2ZcA=="],
-
     "@tanstack/router-utils/tinyglobby": ["tinyglobby@0.2.16", "", { "dependencies": { "fdir": "^6.5.0", "picomatch": "^4.0.4" } }, "sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg=="],
 
     "@tanstack/start-plugin-core/@babel/code-frame": ["@babel/code-frame@7.27.1", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.27.1", "js-tokens": "^4.0.0", "picocolors": "^1.1.1" } }, "sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg=="],
-
-    "@tanstack/start-plugin-core/@tanstack/router-generator": ["@tanstack/router-generator@1.167.21", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@tanstack/router-generator/-/router-generator-1.167.21.tgz", { "dependencies": { "@babel/types": "^7.28.5", "@tanstack/router-core": "1.171.15", "@tanstack/router-utils": "1.162.2", "@tanstack/virtual-file-routes": "1.162.0", "jiti": "^2.7.0", "magic-string": "^0.30.21", "prettier": "^3.5.0", "zod": "^4.4.3" } }, "sha512-m3oXZyienj8owialdyoZ0txHQrnEx/Ra+D9kWtar5fC2cWZr5Pvxl86VY2mX5RRLC5QLKLeRGT1x4HV95wHVDQ=="],
-
-    "@tanstack/start-plugin-core/@tanstack/router-plugin": ["@tanstack/router-plugin@1.168.23", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@tanstack/router-plugin/-/router-plugin-1.168.23.tgz", { "dependencies": { "@babel/core": "^7.28.5", "@babel/template": "^7.27.2", "@babel/types": "^7.28.5", "@tanstack/router-core": "1.171.15", "@tanstack/router-generator": "1.167.21", "@tanstack/router-utils": "1.162.2", "chokidar": "^5.0.0", "unplugin": "^3.0.0", "zod": "^4.4.3" }, "peerDependencies": { "@rsbuild/core": ">=1.0.2 || ^2.0.0", "@tanstack/react-router": "^1.170.18", "vite": ">=5.0.0 || >=6.0.0 || >=7.0.0 || >=8.0.0", "vite-plugin-solid": "^2.11.10 || ^3.0.0-0", "webpack": ">=5.92.0" }, "optionalPeers": ["@rsbuild/core", "@tanstack/react-router", "vite", "vite-plugin-solid", "webpack"] }, "sha512-0+PIcvnaAimFwjoEIeV3h7LKjzC8zNnp7pH2UamdKwQ9QlY99WU9V0Xl0zbM0i9hrUa/mKgWPDAzELmPUu5fMA=="],
 
     "@tanstack/start-plugin-core/picomatch": ["picomatch@4.0.4", "", {}, "sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A=="],
 
@@ -1600,10 +1592,6 @@
     "@tailwindcss/oxide-wasm32-wasi/@napi-rs/wasm-runtime/@tybys/wasm-util": ["@tybys/wasm-util@0.10.1", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg=="],
 
     "@tanstack/router-utils/tinyglobby/picomatch": ["picomatch@4.0.4", "", {}, "sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A=="],
-
-    "@tanstack/start-plugin-core/@tanstack/router-generator/jiti": ["jiti@2.7.0", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/jiti/-/jiti-2.7.0.tgz", { "bin": { "jiti": "lib/jiti-cli.mjs" } }, "sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ=="],
-
-    "@tanstack/start-plugin-core/@tanstack/router-generator/prettier": ["prettier@3.8.3", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw=="],
 
     "@typescript-eslint/typescript-estree/tinyglobby/picomatch": ["picomatch@4.0.4", "", {}, "sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A=="],
 
