@@ -2040,6 +2040,10 @@ export type Database = {
         Args: never
         Returns: Database["public"]["Enums"]["app_role"]
       }
+      ensure_user_bootstrap: {
+        Args: { _full_name?: string }
+        Returns: Database["public"]["Enums"]["app_role"]
+      }
       expire_stale_quotes: { Args: never; Returns: number }
       has_role: {
         Args: {
