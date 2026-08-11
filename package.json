@@ -26,6 +26,7 @@
     "branch:smoke": "node scripts/branch-smoke-check.mjs",
     "branch:backup": "node scripts/backup-branch-db.mjs",
     "branch:provision-auth": "node scripts/provision-branch-auth-users.mjs",
+    "dev:test-mfa-user": "node scripts/create-test-mfa-user.mjs",
     "sync:once": "node scripts/sync-once.mjs",
     "sync:watch": "node scripts/sync-watch.mjs",
     "deploy:cloudflare": "npm run build:cloudflare && wrangler deploy --config .output/server/wrangler.json",
